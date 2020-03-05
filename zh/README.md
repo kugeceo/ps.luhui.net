@@ -1,6 +1,6 @@
 # luhuiWebPhotoshop
 > luhuiWebPhotoshop精简版是利用HTML5技术在Web上实现对图形图像的处理，构建易维护、易共享、易于拓展、实时性的Web图形图像处理平台。
-> 精简版功能包括：图形绘制、图像处理、图像操作。完整版包括多人协作操作图像、实时交流、图片搜索，同时实现实时的多人协作处理图形图像技术。（完整版后续上传）
+> 精简版功能包括：图形绘制、图像处理、图像操作。完整版包括多人协作操作图像、实时交流、图片搜索，同时实现实时的多人协作处理图形图像技术。
 ## luhuiWebPhotoshop绘制展示1
 ![luhuiWebPhotoshop绘制展示1](https://raw.githubusercontent.com/leanfish2011/WebPhotoshop-Simple/master/Images/1.png)
 
