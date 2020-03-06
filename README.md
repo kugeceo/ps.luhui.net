@@ -1,19 +1,25 @@
 # ps.luhui.net 
 
 
-鲁虺PS在线图片编辑器luhuiPhotoshopon
+鲁虺PS在线图片编辑器luhuiwebPhotoshopon
 
 
-
+自定义域名演示地址
 http://ps.luhui.net 
 
+自定义域名演示地址
+http://photoshop.luhui.net 
 
+
+代码托管运营在
 [![Netlify Status](https://api.netlify.com/api/v1/badges/d9521819-5439-408e-9bd5-45fbdec2a40e/deploy-status)](https://app.netlify.com/sites/luhuiphotoshop/deploys)
 
+
+演示地址
 http://luhuiphotoshop.netlify.com
 
 
-在线PS图像处理工具
+鲁虺在线PS图像处理工具
 
 
 
