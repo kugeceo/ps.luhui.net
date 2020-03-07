@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<title>照片美图 图片加工 ps化妆 云照片处理 照片润色</title>
+	<meta name="description" content="在线PS软件比美图秀秀更专业，可以实现昵图网设计素材共享在线使用Photoshop处理图片，直接打开psd文件。在线PS照片，在线ps教程、在线PS照片处理、在线PS下载、使用在线PS照片艺术都能轻而易举，是一部深受广大网友喜爱在线Photoshop软件无需下载。" />
+    <meta name="keywords" content="ps, photoshop,图片处理,美图,昵图,素材,在线ps" />
+	<link rel="stylesheet" href="Static/css/common.min.css?v=87e8a6"/>
+	<link rel="stylesheet" href="Static/css/home.min.css?v=14633"/>
+	<link rel="stylesheet" href="Static/css/bannerSource.css?v=14632"/>
+	
+
+</head>
+<body class="banner-engine normal-header">
+
+<!-- header -->
+<div class="header-container">
+	<div class="banner-box">
+		<div class="top-nav header-main">
+			<div class="global-topbar default-transition-fast">
+				<div class="auto">
+					<div class="welcome-container" id="userinfoContainer">
+						<div class="logout-container">
+							<p class="slogan">PS在线，</p>
+							<a href="/login/" class="login-button"  target="_blank">请登录</a>
+							<a href="/register/" class="register-button"  target="_blank">免费注册</a>
+						</div>
+						<div class="userinfo-container">
+							<div class="username-container" id="usernameContainer">
+								<a href="/user/" class="username-text" id="usernameText" target="/user/">
+									<span class="username-text-show text-overflow" id="usernameShow"></span>
+									<span id="userId"></span>
+								</a>
+								<span class="dropdown-triangle"></span>
+							</div>
+							<div class="user-panel hide" id="userPanel">
+								<div class="user-panel-header">
+									<div class="user-money">￥:<span id="userMoney">0.00</span></div>
+									<div class="user-money-control">
+										<a href="/user/payment/" target="/user/">充值</a>
+										<a href="/user/withdrawal/" target="/user/">提现</a>
+										<a href="/user/cashcoupon/" target="/user/">图币</a>
+									</div>
+								</div>
+								<div class="user-panel-body">
+									<ul class="shortcut-menu-list">
+										<li class="shortcut-menu-item">
+											<a href="/user/serverManage/" target="/user/">图片管理</a>
+											<span class="user-record-count" id="serverCount">-</span>
+										</li>
+										<li class="shortcut-menu-item">
+											<a href="/user/order/" target="/user/">订购PS</a>
+											<span class="user-record-count" id="orderCount">-</span>
+										</li>
+										<li class="shortcut-menu-item">
+											<a href="/user/message/" target="/user/">消息中心</a>
+											<span class="user-record-count" id="msgCount">-</span>
+										</li>
+										<li class="shortcut-menu-item">
+											<a href="/user/workorder/add.html" target="/user/">上传图片</a>
+										</li>
+										<li class="shortcut-menu-item">
+											<a href="/user/auth/newAuth" target="/user/">实名认证</a>
+										</li>
+										<li class="shortcut-menu-item">
+											<a href="/user/logout/">安全退出</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="topbar-right">
+						<a href="/photoeditor/" target="/photoeditor/" class="link-items">PS照片编辑</a>
+						<span class="link-spacing"></span>
+						<a href="/help/" target="_blank" class="link-items">帮助文档</a>
+						<span class="link-spacing"></span>
+						<a href="/iqtext/" target="/iqtext/" class="link-items">智商测试</a>
+						<span class="link-spacing"></span>
+						<a href="#a_null" class="link-items mobile-version">
+							手机版
+							<span class="mobile-qrcode">
+
+							</span>
+						</a>
+						<span class="link-spacing"></span>
+						<a href="/about/feedback.html" class="link-items">投诉建议</a>
+					</div>
+				</div>
+			</div>
+			<div class="header default-transition-fast">
+				<div class="auto">
+					<div class="header-logo">
+						<a href="/" class="logo hide-text">PS</a>
+						<a href="/sucai/" class="slogan-gif hide-text" target="new">ps, ps在线图片编辑器是一个专业的在线ps照片处理软件。绿色免安装,直接在您的浏览器上用它修正,强大的在线Photoshop处理功能满足您的所有美化需求。</a>
+					</div>
+					<div class="header-nav">
+						<ul class="">
+							<li class="nav-1 header-nav-li">
+								<a href="/">首页</a>
+							</li>
+							<li class="nav-2 header-nav-li"><a href="/ps/" target="_blank">云处理</a>
+								<i class="pop-arrow" id="prodArrow"></i>
+								<ul class="pop-list prod-list">
+									<li><a href="/photoshop/" target="_blank">在线ps</a></li>
+									<li><a href="/gif/" target="_blank">GIF生成</a></li>
+                                    <li><a href="/photoeditor/" target="_blank">照片编辑器</a></li>
+									<li><a href="/express/" target="_blank">图片处理</a></li>
+								</ul>
+							</li>
+							<li class="nav-4 header-nav-li"><a href="/photoshop/" target="_blank">在线ps处理</a>
+								<i class="pop-arrow" id="solutionArrow"></i>
+								<ul class="pop-list">
+									<li><a href="/photoeditor/" target="_blank">PS解决方案</a></li>
+									<li><a href="/ps/" target="_blank">照片拼图版</a></li>
+									<li><a href="/express/" target="_blank">简易版</a></li>
+									<li><a href="/gif/" target="_blank">在线GIF</a></li>
+                                    <li><a href="/iqtext/" target="_blank">在线IQ</a></li>
+								</ul>
+							</li>
+							<li class="nav-5 header-nav-li"><a href="/help/" target="_blank">帮助中心</a>
+								<i class="pop-arrow" id="helpArrow"></i>
+								<ul class="pop-list">
+									<li><a href="/help/" target="_blank">新手入门</a></li>
+									<li><a href="/help/user/">API文档</a></li>
+									<li><a class="help-content" data-content_id="2" href="javascript:;">自助服务</a></li>
+									<li><a class="help-content" data-content_id="3" href="javascript:;">联系客服</a></li>
+								</ul>
+							</li>
+							<li class="nav-6 header-nav-li"><a href="/about/" target="_blank">关于我们</a>
+								<i class="pop-arrow" id="aboutArrow"></i>
+								<ul class="pop-list">
+									<li><a href="/about/" target="_blank">关于我们</a></li>
+									<li><a href="/about/course.html">商务合作</a></li>
+									<li><a href="/news/">新闻公告</a></li>
+									<li><a href="/about/join.html">加入我们</a></li>
+									<li><a href="/about/contact.html">联系我们</a></li>
+								</ul>
+							</li>
+						</ul>
+						<div class="mask-white">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- banner图 -->
+		<ul class="banner-ul clearfix" id="slider-back" >
+        
+        <div class="flashContainer">
+<object type="application/x-shockwave-flash" data="ps.jpg" width="100%" height="100%" id="swfFlash" style="visibility: visible;">
+<param name="allowScriptAccess" value="always">
+<param name="allowFullScreenInteractive" value="true">
+<param name="flashvars" value="baseDomain=http://ps.luhui.net/"></object><a href="http://www.adobe.com/go/getflashplayer">
+</a></div>
+            
+		</ul>
+		<div class="slider-main auto">
+
+		</div>
+		<div class="banner-point">
+			<div class="auto">
+				<ul class="banner-area" id="slider-btn">
+					<!--<li class="active" data-delay="12000"></li>-->
+				</ul>
+			</div>
+		</div>
+		<div class="news-casting">
+			<div class="auto">
+				<div class=" news-box">
+					<span class="news-img"></span>
+					<ul class="news-ul clearfix">
+						<li><a href="#">ps是好用的在线图像编辑软件</a></li><li><a href="#">菜鸟快速修复一张破损的老照片</a></li><li><a href="#">WEB PHOTOSHOP(在线PS)</a></li>					</ul>
+					<a class="news-more" href="/news/">更多&gt;&gt;</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+<!-- header end-->
+
+<!--推广活动 start-->
+<div class="service-action back-white">
+	<div class="auto">
+		<ul class="service-action-ul clearfix">
+			<li>
+				<a href="/about/" target="_blank">
+					<div class="service-action-box">
+						<div class="service-action-img action-img1">
+
+						</div>
+						<div class="service-action-text">
+							<p class="service-action-title">了解鲁虺</p>
+							<div class="service-action-info">在线PS图像编辑软件是国内领先的在线PS图像处理系统</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="#" target="_blank">
+					<div class="service-action-box">
+						<div class="service-action-img action-img2">
+
+						</div>
+						<div class="service-action-text">
+							<p class="service-action-title">绿色软件免安装</p>
+							<div class="service-action-info">上网就能编辑图片，也不再需要安装任何软件和插件安全可靠</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="#" target="_blank">
+					<div class="service-action-box">
+						<div class="service-action-img action-img3">
+
+						</div>
+						<div class="service-action-text">
+							<p class="service-action-title">深受全球网友青睐</p>
+							<div class="service-action-info">纯中文界面，支持多国语言，界面友好，使用简单</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="#" target="_blank">
+					<div class="service-action-box">
+						<div class="service-action-img action-img4">
+
+						</div>
+						<div class="service-action-text">
+							<p class="service-action-title">ps提供DIY开发接口API</p>
+							<div class="service-action-info">丰富的API接口，支持二次开发，无需安装其它软件插件</div>
+						</div>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<!--推广活动 end-->
+<div class="auto">
+  鲁虺   云在线PS软件比美图秀秀更专业，可以实现昵图网设计素材共享在线使用Photoshop处理图片，直接打开psd文件。在线PS照片，在线ps教程、在线PS照片处理、在线PS下载、使用在线PS照片艺术都能轻而易举，是一部深受广大网友喜爱在线Photoshop软件无需下载。
+</div> 
+<!-- footer -->
+	<div class="wave-box">
+
+		<div class="marquee-box marquee-up" id="marquee-box">
+			<div class="marquee">
+				<div class="wave-list-box" id="wave-list-box1">
+					<ul >
+						<li><img height="60" alt="波浪" src="Static/css/img/wave_02.png"/></li>
+					</ul>
+				</div>
+				<div class="wave-list-box" id="wave-list-box2">
+				</div>
+			</div>
+		</div>
+
+
+		<div class="marquee-box" id="marquee-box3">
+			<div class="marquee">
+				<div class="wave-list-box" id="wave-list-box4">
+					<ul >
+						<li><img height="60" alt="波浪" src="Static/css/img/wave_01.png"/></li>
+					</ul>
+				</div>
+				<div class="wave-list-box" id="wave-list-box5">
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div class="footer">
+		<div class="auto clearfix">
+
+			<ul class="suspension">
+				<li class="default-transition">
+					<a href="tencent://message/?uin=63625244&Site=www.luhui.net&Menu=yes" class="voice-service hide-text" title="在线客服">鲁虺在线客服</a>
+				</li>
+				<li class="default-transition suspension-tel">
+					<span class="pop-tel hide-text" title="鲁虺客服热线">鲁虺客服热线</span>
+					<div class="connect-us pop-detail">
+						客服热线：13386070835						<span class="tel-corner-back"></span>
+						<span class="tel-corner"></span>
+					</div>
+				</li>
+				<li class="default-transition suspension-qrcode">
+					<span class="pop-qrcode hide-text" title="关注鲁虺微信公众号">关注鲁虺微信公众号</span>
+					<div class="qrcode pop-detail"></div>
+				</li>
+				<li class="default-transition" id="toTop" title="返回顶部">
+				</li>
+			</ul>
+
+			<!-- footer主要-->
+			<div class="five-superiority">
+				<ul class="five-superiority-list clearfix">
+					<li class="compensate_ico">
+						<a href="#">
+							<span class="superiority-icon"></span>
+							<span>图片编辑、照片合成</span>
+						</a>
+					</li>
+					<li class="retreat_ico">
+						<a href="#">
+							<span class="superiority-icon"></span>
+							<span>平面设计、素材下载</span>
+						</a>
+					</li>
+					<li class="technology_ico">
+						<a class="superiority-text" href="#">
+							<span class="superiority-icon"></span>
+							<span>拼图美化、美工工具</span>
+						</a>
+					</li>
+					<li class="prepare_ico">
+						<a href="#">
+							<span class="superiority-icon"></span>
+							<span>在线PHOTOSHOP</span>
+						</a>
+					</li>
+					<li class="service_ico">
+						<a href="#">
+							<span class="superiority-icon"></span>
+							<span>图片标注、寸照制作</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="footer-floor1">
+				<div class="footer-list">
+					<ul>
+						<li class="flist-title">PS 云处理</li>
+                        <li><a href="/photoshop/" target="_blank">在线ps</a></li>
+						<li><a href="/gif/" target="_blank">GIF生成</a></li>
+                        <li><a href="/photoeditor/" target="_blank">照片编辑器</a></li>
+						<li><a href="/express/" target="_blank">图片处理</a></li>
+					</ul>
+					<ul>
+						<li class="flist-title">在线ps处理</li>
+						<li><a href="/photoshop/" target="_blank">PS解决方案</a></li>
+						<li><a href="/ps/" target="_blank">照片拼图</a></li>
+						<li><a href="/express/" target="_blank">简易版</a></li>
+						<li><a href="/gif/" target="_blank">在线GIF</a></li>
+						<li><a href="/iqtext/" target="_blank">在线IQ</a></li>
+					</ul>
+					<ul >
+						<li class="flist-title">帮助中心</li>
+						<li><a href="/user/workorder/" target="/user/">新手入门</a></li>
+						<!--<li><a href="http://icp.niaoyun.com/">备案中心</a></li>-->
+						<li><a href="/about/feedback.html">意见反馈</a></li>
+						<li><a href="/support/vip.html">API文档</a></li>
+						<li><a href="#">联系客服</a></li>
+						<li><a href="/help/" target="_blank">自助服务</a></li>
+					</ul>
+					<ul class="flist-4">
+						<li class="flist-title">关于PS</li>
+						<li><a href="/about/" target="_blank">鲁虺介绍</a></li>
+						<li><a href="/news/">新闻动态</a></li>
+						<li><a href="/about/join.html">加入我们</a></li>
+						<li><a href="/about/course.html">商务合作</a></li>
+						<li><a href="/about/links.html">友情链接</a></li>
+					</ul>
+					<div class="clear-float"></div>
+				</div>
+				<div class="footer-right">
+					<div class="telephone" title="服务热线">
+						<span></span>
+						<div class="tel-number">13386070835</div>
+					</div>
+					<div class="official-plat">
+						<p class="weixin" style="background-image: "><span id="wx-corner"></span></p>
+
+						<p class="weibo" style="background-image: "><span id="wb-corner"></span></p>
+						<ul>
+							<li><a href="#a_null"><span class="weixin-logo"></span>在线PS微信</a></li>
+							<li title="点击打开官方微博"><a href="#" target="_blank"><span class="weibo-logo"></span>PS官方微博</a></li>
+							<li title="点击打开官方客服"><a href="tencent://message/?uin=63625244&Site=www.luhui.net&Menu=yes"><span class="qq-logo"></span>图片编辑器客服</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="clear-float"></div>
+			</div>
+		</div>
+		<div class="footer-floor2">
+			<p>Copyright&nbsp;2004-01-11&nbsp;luhui.net&nbsp;all rights reserved</p>
+			<p></p>
+			<p>
+				
+			</p>
+		</div>
+	</div>
+	<!-- footer end -->
+    <script type="text/javascript" src="Static/js/swfobject.js"></script>
+    <script type="text/javascript">
+        var flashvars = {baseDomain: 'http://ps.luhui.net/',};
+        var params = {allowScriptAccess: "always", allowFullScreenInteractive:true,
+    }; 
+	   params.allowfullscreen = "true";
+       params.wmode = "transparent";
+        swfobject.embedSWF("ps.jpg", "swfFlash", "100%", "100%", "7", "expressInstall.swf", flashvars, params);
+	</script>
+    
+	<script src="https://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		window.jQuery || document.write('<script type="text/javascript" src="Static/js/jquery.min.js">\x3C/script>')
+	</script>
+	<script src="Static/js/jquery.cookie.js"></script>
+	<script src="Static/js/public.js?v=87e8a6"></script>
+    <!--<script src="Static/js//PIE.js"></script>-->
+	<!--[if lte IE 9]>
+	<script src="/template/Home/Niaoyun/PC/Static/lib/browser/PIE.js"></script>
+	<![endif]-->
+	<!--[if IE 7]>
+	<script charset="utf-8">
+		$(function () {
+			$("a").attr("hidefocus", true);
+		});
+	</script>
+	<![endif]-->
+	<script src="Static/js/index.js?v=3462"></script>
+    <div style="display:none">
+
+</noscript></div>
+
+
+
+<!--百度自动推送代码-->
+<script>
+(function(){
+    var bp = document.createElement('script');
+    bp.src = '//push.zhanzhang.baidu.com/push.js';
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!--百度自动推送代码-->
+
+
+<!-- 网址安全插件开始 -->
+<script type="text/javascript">
+	var _svq_ = _svq_ || [];
+	_svq_.push(['set_api_key', '16adflfafads9gf28327005056b68c3d']);
+	_svq_.push(['set_noicon_class', '']); //链接前不显示任何图标，如果需要显示，请去掉这句
+	_svq_.push(['set_nopopup_class', '-sv-no-popup']); 
+	_svq_.push(['check_page']);
+	(function(){   
+		var aq = document.createElement('script');
+		aq.type = 'text/javascript'; 
+		aq.async = true;   
+		aq.charset = 'utf-8';
+		aq.src = 'http://openapi.anquan.org/static/aq.js';    
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(aq, s); 
+	})();
+</script>	
+<!-- 网址安全插件结束 --> 
+
+<div style="display:none">
+    <script src="http://s11.cnzz.com/z_stat.php?id=610720&web_id=610720" language="JavaScript"></script>
+</div>
+
+
+
+</body>
+</html>

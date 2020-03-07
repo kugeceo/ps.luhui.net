@@ -1,0 +1,47 @@
+/* 优先加载第一张banner */
+html {
+	background: url(img/home_banner_hongkong0526.jpg) no-repeat 0 -1000px;
+}
+
+/* flash */
+.flashContainer { margin-top: 104px; height: 750px; width: 100%; }
+/* banner图 */
+.banner-new-official {
+	background: url(img/home_banner_newOfficial.jpg) center center;
+}
+.banner-server {
+	background: url(img/home_banner_server.jpg) center center;
+}
+.banner-idc {
+	background: url(img/home_banner_idc.jpg?v=2) center center;
+}
+.banner-guangdong {
+	background: #000b25 url(img/home_banner_guangdong0525.jpg) center center no-repeat;
+}
+.banner-hongkong {
+	background: #000b25 url(img/home_banner_hongkong0526.jpg) center center no-repeat;
+}
+
+
+/* 5折活动*/
+.banner-engine .banner-text3 {
+	font-size: 32px;
+	color: #fff;
+}
+.banner-engine .banner-text4 {
+	margin-top: 0px;
+	font-size: 56px;
+	color: #fff;
+}
+.banner-engine .banner-text5 {
+	margin-top: 20px;
+	font-size: 24px;
+	color: #fff;
+}
+.banner-engine .banner-particulars-5zhe{
+	margin-top: 25px;
+}
+/* 新banner文字颜色 */
+.banner-engine .banner-text2 {
+	color: #fff;
+}
