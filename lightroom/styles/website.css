@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/* CSS Document */
+h1,
+.markdown-section h1{
+	font-size: 1.5em;
+	padding-bottom:0;
+	margin-bottom: 0;
+	line-height: 1.2em;
+}
+h5,
+.markdown-section h5{
+	font-size: 1.1em;
+	padding:0;
+	margin: 0;
+	margin-bottom:26px;
+	color:#9a9a9a;
+	font-weight: normal;
+}
+p{
+	 text-indent:0;
+}
+ul li p,
+blockquote p{
+	text-indent:0em;
+}
+.markdown-section blockquote{
+	padding: 0 1em;
+}
+ul,
+ul li{
+	list-style-type:square;
+}
+#book-search-input{
+	background: #fff;
+}
+.fa-angle-left,
+.fa-angle-right{
+	opacity: .17;
+}
+.gitbook-link address{
+	display: inline;
+}
+.fa-ellipsis-v:before{
+	opacity: 0;
+}
