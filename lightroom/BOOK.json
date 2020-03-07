@@ -1,0 +1,69 @@
+{
+    "title": "Adobe Lightroom CC（IOS）学习手册 - 1St Edition",
+    "description": "Adobe Lightroom CC（IOS）学习手册，摄影后期术语，摄影后期自学手册",
+    "isbn": "",
+    "language": "zh-hans",
+    "direction": "ltr",
+    "author":"Jaki Chen (俊霖)",
+    "gitbook":">=3.0.0",
+    "styles": {
+		"website": "styles/website.css",
+		"ebook": "styles/ebook.css",
+		"pdf": "styles/pdf.css",
+		"mobi": "styles/mobi.css",
+		"epub": "styles/epub.css"
+    },
+    "plugins": [
+      "splitter",
+      "advanced-emoji",
+      "expandable-chapters-small",
+      "-sharing",
+      "sharing-plus",
+      "-lunr",
+      "-search",
+      "search-plus",
+      "favicon",
+      "fontsettings"
+	],"pluginsConfig": {
+  		"sharing": {
+  			"douban": true,
+  			"qq": true,
+  			"weibo": true,
+  			"qzone": false,
+  			"facebook": false,
+  			"line":false,
+  			"linkedin": false,
+  			"google": false,
+  			"whatsapp": false,
+  			"all": [
+  				"douban",
+  				"weibo",
+  				"linkedin",
+  				"qq",
+  				"qzone",
+  				"facebook",
+  				"google",
+  				"hatenaBookmark",
+  				"instapaper",
+  				"twitter",
+  				"messenger",
+  				"whatsapp",
+  				"line"
+  			]
+  		},
+  		"favicon": {
+        "shortcut": "assets/images/favicon.ico",
+        "bookmark": "assets/images/favicon.ico",
+        "appleTouch": "assets/images/apple-touch-icon.png",
+        "appleTouchMore": {
+            "120x120": "assets/images/apple-touch-icon-120x120.png",
+            "180x180": "assets/images/apple-touch-icon-180x180.png"
+        }
+  		},
+  		"fontsettings": {
+  			"theme": "white",
+  			"family": "sans",
+  			"size": 2
+  		}
+    }
+}
