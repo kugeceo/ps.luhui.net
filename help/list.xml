@@ -1,11 +1,13 @@
 ﻿<list>
   <m label="推荐" opened="1">
-  <m type="2" label="高端PS怎样秒杀自拍神器" src="https://player.youku.com/embed/XNzQ2MDc4NzIw"/>
+  <m type="2" label="高端PS怎样秒杀自拍神器" src="flv/ps.mp4?https://player.youku.com/embed/XNzQ2MDc4NzIw"/>
   <m type="2" label="图章工具高楼移位！" src="https://www.tuyitu.com/data/flv/gaolouyiwei.flv"/>
-  <m type="2" label="魔术棒抠像合成" src="https://www.tuyitu.com/data/flv/moshubangkoutu.flv"/>
-  <m type="2" label="自由变形画中画，很实用" src="https://www.tuyitu.com/data/flv/ziyoubianxing.flv"/>
-  <m type="2" label="在线ps图像裁切-如此简单" src="https://www.tuyitu.com/data/flv/tuxiangcaiqie.flv"/>
+  <m type="2" label="魔术棒抠像合成" src="flv/moshubangkoutu.flv"/>
+  <m type="2" label="自由变形画中画，很实用" src="flv/ziyoubianxing.flv"/>
+  <m type="2" label="在线ps图像裁切-如此简单" src="flv/tuxiangcaiqie.flv"/>
   <m label="直播线程①｜Tv No.①" list_src="lists/tv.xml"/></m>
+
+
 <m rtmp="rtmp://live.dltv.cn:1935/live/" src="live11" label="电影频道"/>
 <m rtmp="rtmp://360skylive.wasu.cn/live/" src="jsws" label="江苏卫视"/>
 <m type="2" src="http://g3tv6080.aliapp.com/zb/qq.php?tvid=1975434150"  label="浙江卫视"/>
@@ -75,7 +77,13 @@
 <m rtmp="rtmp://360skylive.wasu.cn/live/" src="dfws" label="东方卫视"/>
 <m type="2" src="http://tvie01.ucatv.com.cn/channels/xjyx/JiangSu-HD-Envivio/flv:JS_HD_Envivio"  label="江苏卫视"/>
 <m type="2" src="http://tvie01.ucatv.com.cn/channels/xjyx/BeiJing-HD-Suma/flv:BJ_HD_Suma"  label="北京卫视"/>
+</m>  
+  
+<m type="3" src="http://111.13.111.242/otttv.bj.chinamobile.com/PLTV/88888888/224/3221225949/1.m3u8"  label="港澳台频道"/>
+<m src="http://111.13.111.242/otttv.bj.chinamobile.com/PLTV/88888888/224/3221225948/1.m3u8" label="凤凰中文高清" />
+<m src="http://111.13.111.242/otttv.bj.chinamobile.com/PLTV/88888888/224/3221225942/1.m3u8" label="凤凰中文高清" />
 </m>
+
 <m list_src="http://g3tv6080.aliapp.com/zb/cntv.php" label="电视回播" />
 <m list_src="http://g3tv6080.aliapp.com/xiu/yy.php" label="金牌艺人" />
 <m list_src="http://g3tv6080.aliapp.com/xiu/kk.php" label="美女直播" />
