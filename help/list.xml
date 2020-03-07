@@ -1,9 +1,10 @@
 ﻿<list>
   <m label="推荐" opened="1">
-  <m type="2" label="图章工具高楼移位！" src="/data/flv/gaolouyiwei.flv"/>
-  <m type="2" label="魔术棒抠像合成" src="/data/flv/moshubangkoutu.flv"/>
-  <m type="2" label="自由变形画中画，很实用" src="/data/flv/ziyoubianxing.flv"/>
-  <m type="2" label="在线ps图像裁切-如此简单" src="/data/flv/tuxiangcaiqie.flv"/>
+  <m type="2" label="高端PS怎样秒杀自拍神器" src="https://player.youku.com/embed/XNzQ2MDc4NzIw"/>
+  <m type="2" label="图章工具高楼移位！" src="https://www.tuyitu.com/data/flv/gaolouyiwei.flv"/>
+  <m type="2" label="魔术棒抠像合成" src="https://www.tuyitu.com/data/flv/moshubangkoutu.flv"/>
+  <m type="2" label="自由变形画中画，很实用" src="https://www.tuyitu.com/data/flv/ziyoubianxing.flv"/>
+  <m type="2" label="在线ps图像裁切-如此简单" src="https://www.tuyitu.com/data/flv/tuxiangcaiqie.flv"/>
   <m label="直播线程①｜Tv No.①" list_src="lists/tv.xml"/></m>
 <m rtmp="rtmp://live.dltv.cn:1935/live/" src="live11" label="电影频道"/>
 <m rtmp="rtmp://360skylive.wasu.cn/live/" src="jsws" label="江苏卫视"/>
