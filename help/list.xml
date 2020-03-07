@@ -75,12 +75,7 @@
 <m rtmp="rtmp://360skylive.wasu.cn/live/" src="dfws" label="东方卫视"/>
 <m type="2" src="http://tvie01.ucatv.com.cn/channels/xjyx/JiangSu-HD-Envivio/flv:JS_HD_Envivio"  label="江苏卫视"/>
 <m type="2" src="http://tvie01.ucatv.com.cn/channels/xjyx/BeiJing-HD-Suma/flv:BJ_HD_Suma"  label="北京卫视"/>
-</m>
-<m type="3" src="http://111.13.111.242/otttv.bj.chinamobile.com/PLTV/88888888/224/3221225949/1.m3u8"  label="港澳台频道"/>
-<m src="http://111.13.111.242/otttv.bj.chinamobile.com/PLTV/88888888/224/3221225948/1.m3u8" label="凤凰中文高清" />
-<m src="http://111.13.111.242/otttv.bj.chinamobile.com/PLTV/88888888/224/3221225942/1.m3u8" label="凤凰中文高清" />
-</m>
-<m list_src="http://g3tv6080.aliapp.com/zb/cntv.php" label="电视回播" />
+</m><m list_src="http://g3tv6080.aliapp.com/zb/cntv.php" label="电视回播" />
 <m list_src="http://g3tv6080.aliapp.com/xiu/yy.php" label="金牌艺人" />
 <m list_src="http://g3tv6080.aliapp.com/xiu/kk.php" label="美女直播" />
 <m list_src="http://g3tv6080.aliapp.com/xiu/163.php?m=bobo" label="热门美女" />
