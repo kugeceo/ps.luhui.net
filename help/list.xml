@@ -1,0 +1,85 @@
+﻿<list>
+  <m label="推荐" opened="1">
+  <m type="2" label="图章工具高楼移位！" src="/data/flv/gaolouyiwei.flv"/>
+  <m type="2" label="魔术棒抠像合成" src="/data/flv/moshubangkoutu.flv"/>
+  <m type="2" label="自由变形画中画，很实用" src="/data/flv/ziyoubianxing.flv"/>
+  <m type="2" label="在线ps图像裁切-如此简单" src="/data/flv/tuxiangcaiqie.flv"/>
+  <m label="直播线程①｜Tv No.①" list_src="lists/tv.xml"/></m>
+<m rtmp="rtmp://live.dltv.cn:1935/live/" src="live11" label="电影频道"/>
+<m rtmp="rtmp://360skylive.wasu.cn/live/" src="jsws" label="江苏卫视"/>
+<m type="2" src="http://g3tv6080.aliapp.com/zb/qq.php?tvid=1975434150"  label="浙江卫视"/>
+<m label="国内卫视">
+<m rtmp="rtmp://360skylive.wasu.cn/live/" src="zjws" label="浙江卫视"/>
+<m rtmp="rtmp://360skylive.wasu.cn/live/" src="jsws" label="江苏卫视"/>
+<m rtmp="rtmp://360skylive.wasu.cn/live/" src="ahws" label="安徽卫视"/>
+<m rtmp="rtmp://360skylive.wasu.cn/live/" src="hljws" label="龙江卫视"/>
+<m rtmp="rtmp://360skylive.wasu.cn/live/" src="szws" label="深圳卫视"/>
+<m rtmp="rtmp://360skylive.wasu.cn/live/" src="tjws" label="天津卫视"/>
+<m rtmp="rtmp://360skylive.wasu.cn/live/" src="lnws" label="辽宁卫视"/>
+<m rtmp="rtmp://360skylive.wasu.cn/live/" src="gdws" label="广东卫视"/>
+<m rtmp="rtmp://360skylive.wasu.cn/live/" src="sdws" label="山东卫视"/>
+<m rtmp="rtmp://360skylive.wasu.cn/live/" src="gzws" label="贵州卫视"/>
+<m rtmp="rtmp://360skylive.wasu.cn/live/" src="jkwshk" label="健康卫视"/>
+<m rtmp="rtmp://360skylive.wasu.cn/live/" src="ztv5" label="浙江影视"/>
+<m rtmp="rtmp://360skylive.wasu.cn/live/" src="ztv3" label="浙江经视"/>
+<m rtmp="rtmp://360skylive.wasu.cn/live/" src="kaku" label="炫动卡通"/>
+<m rtmp="rtmp://360skylive.wasu.cn/live/" src="jykt" label="金鹰卡通"/>
+<m type="2" src="http://main.gslb.ku6.com/broadcast/sub?channel=910"  label="音乐频道"/>
+<m rtmp="rtmp://live.v1.cn/v1live/" src="v1live" label="第一视频"/>
+ <m type="2" src="phd43" rtmp="rtmp://lm01.everyontv.net/ptv2/" label="韩国音乐"/>
+<m type="2" src="http://live-01.ywcity.cn/channels/ywtv/video_channel_03/flv:sd/live.flv" label="公共文艺"/>
+<m type="2" src="http://ming-live.nbtv.cn/channels/nbtv/nbtv4/flv:sd/live.flv" label="宁波影视"/>
+<m type="2" src="ys" rtmp="rtmp://live1.baihuwang.com:1935/live/" label="大庆影视"/>
+<m src="http://vapptime1.cntv.chinacache.net:8000/live/flv/channel279" label="江苏卫视" />
+<m src="http://vapptime1.cntv.chinacache.net:8000/live/flv/channel309" label="北京文艺" />
+<m src="http://vapptime1.cntv.chinacache.net:8000/live/flv/channel329" label="北京科教" />
+<m src="http://vapptime1.cntv.chinacache.net:8000/live/flv/channel304" label="北京影视" />
+<m src="http://vapptime1.cntv.chinacache.net:8000/live/flv/channel284" label="北京财经" />
+<m src="http://vapptime1.cntv.chinacache.net:8000/live/flv/channel314" label="北京体育" />
+<m src="http://vapptime1.cntv.chinacache.net:8000/live/flv/channel319" label="北京生活" />
+<m src="http://vapptime1.cntv.chinacache.net:8000/live/flv/channel324" label="北京青年" />
+<m src="http://vapptime.cntv.chinacache.net:8000/live/flv/channel64" label="浙江卫视" />
+<m src="http://vapptime.cntv.chinacache.net:8000/live/flv/channel69" label="安徽卫视" />
+<m src="http://vapptime.cntv.chinacache.net:8000/live/flv/channel184" label="北京卫视" />
+<m src="http://vapptime.cntv.chinacache.net:8000/live/flv/channel79" label="天津卫视" />
+<m src="http://vapptime.cntv.chinacache.net:8000/live/flv/channel74" label="辽宁卫视" />
+<m src="http://vapptime.cntv.chinacache.net:8000/live/flv/channel84" label="江西卫视" />
+<m src="http://vapptime.cntv.chinacache.net:8000/live/flv/channel99" label="黑龙江卫视" />
+<m src="http://vapptime1.cntv.chinacache.net:8000/live/flv/channel274" label="山东卫视" />
+<m src="http://vapptime.cntv.chinacache.net:8000/live/flv/channel189" label="东方卫视" />
+<m src="http://vapptime.cntv.chinacache.net:8000/live/flv/channel119" label="云南卫视" />
+<m src="http://vapptime.cntv.chinacache.net:8000/live/flv/channel89" label="四川卫视" />
+<m src="http://vapptime.cntv.chinacache.net:8000/live/flv/channel114" label="河南卫视" />
+<m src="http://vapptime.cntv.chinacache.net:8000/live/flv/channel144" label="广东卫视" />
+<m src="http://vapptime1.cntv.chinacache.net:8000/live/flv/channel289" label="深圳卫视" />
+<m src="http://vapptime.cntv.chinacache.net:8000/live/flv/channel109" label="湖北卫视" />
+<m src="http://vapptime.cntv.chinacache.net:8000/live/flv/channel154" label="东南卫视" />
+<m src="http://vapptime.cntv.chinacache.net:8000/live/flv/channel94" label="重庆卫视" />
+<m src="http://vapptime.cntv.chinacache.net:8000/live/flv/channel104" label="贵州卫视" />
+<m src="http://vapptime.cntv.chinacache.net:8000/live/flv/channel129" label="河北卫视" />
+<m src="http://vapptime.cntv.chinacache.net:8000/live/flv/channel139" label="吉林卫视" />
+<m src="http://vapptime.cntv.chinacache.net:8000/live/flv/channel124" label="广西卫视" />
+<m src="http://vapptime.cntv.chinacache.net:8000/live/flv/channel159" label="青海卫视" />
+<m src="http://vapptime.cntv.chinacache.net:8000/live/flv/channel194" label="山西卫视" />
+<m src="http://vapptime.cntv.chinacache.net:8000/live/flv/channel134" label="陕西卫视" />
+<m src="http://vapptime.cntv.chinacache.net:8000/live/flv/channel149" label="内蒙古卫视" />
+<m src="http://vapptime.cntv.chinacache.net:8000/live/flv/channel174" label="宁夏卫视" />
+<m src="http://vapptime.cntv.chinacache.net:8000/live/flv/channel164" label="西藏卫视" />
+<m src="http://vapptime.cntv.chinacache.net:8000/live/flv/channel199" label="新疆卫视" />
+<m src="http://vapptime.cntv.chinacache.net:8000/live/flv/channel169" label="甘肃卫视" />
+<m src="http://vapptime.cntv.chinacache.net:8000/live/flv/channel179" label="旅游卫视" />
+<m src="http://vapptime.cntv.cloudcdn.net:8000/live/flv/channel54" label="熊猫直播" />
+<m type="2" src="http://live-cdn.kksmg.com/channels/tvie/ssty/flv:sd/live"   label="五星体育"/>
+<m type="2" src="http://live-cdn.kksmg.com/channels/tvie/test2/flv:sd/live"   label="浙江卫视"/>
+<m rtmp="rtmp://360skylive.wasu.cn/live/" src="dfws" label="东方卫视"/>
+<m type="2" src="http://tvie01.ucatv.com.cn/channels/xjyx/JiangSu-HD-Envivio/flv:JS_HD_Envivio"  label="江苏卫视"/>
+<m type="2" src="http://tvie01.ucatv.com.cn/channels/xjyx/BeiJing-HD-Suma/flv:BJ_HD_Suma"  label="北京卫视"/>
+</m>
+<m list_src="http://g3tv6080.aliapp.com/zb/cntv.php" label="电视回播" />
+<m list_src="http://g3tv6080.aliapp.com/xiu/yy.php" label="金牌艺人" />
+<m list_src="http://g3tv6080.aliapp.com/xiu/kk.php" label="美女直播" />
+<m list_src="http://g3tv6080.aliapp.com/xiu/163.php?m=bobo" label="热门美女" />
+<m list_src="http://g3tv6080.aliapp.com/zb/qq.php" label="ＱＱ直播" />
+<m list_src="http://g3tv6080.aliapp.com/zb/sohutv.php" label="搜狐ＴＶ" />
+</list>
+

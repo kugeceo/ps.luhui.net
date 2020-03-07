@@ -1,0 +1,33 @@
+<cmp 
+	name = "鲁虺在线PS | 边学边用 - 『立即下载PS』" 
+	link = "/soft/ps.exe" 
+	link_target = "_blank"
+	description = "PS 有问必答 "
+	logo="{src:logo.png,xywh:[10R,10R,20,0]}"
+    logo_alpha ="1"
+    ga_id="UA-9406170-4" ga_debug="0"	
+	
+	skins = "skins/ps.zip"
+	plugins="plugins/announce.swf,plugins/sharing.swf,plugins/download.swf,plugins/ga.swf,plugins/youku.swf,plugins/ads.swf"
+	backgrounds ="plugins/bg.swf"
+	
+	lists = ""
+    weather_handler = "weather.php"
+    weather_xywh = "0C,10,48,48"
+	
+	src_handler = "1" 
+	lrc_handler = "1"
+	play_id = "1"
+	auto_play="1"
+	click_play="1"
+	list_delete="1"
+	sound_sample = "true"
+	mixer_displace = "true"
+	mixer_filter = "true"
+	
+	ads="{src:plugins/4.swf,link:http://ps.luhui.net,link_target:_blank,width:350,height:280,onstate:paused,target:video}"
+	counter = "/soft/2014-04-30_gif.exe"
+		
+	announce_content = "%3Cb%3E%3Ca%20href%3D'http%3A%2F%2Fps.luhui.net'%20target%3D'_blank'%3E%E5%9B%BD%E5%86%85%E9%A2%86%E5%85%88%E7%9A%84%E5%9C%A8%E7%BA%BFPS%E4%BA%91%E8%AE%A1%E7%AE%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%E7%B3%BB%E7%BB%9F%EF%BD%9Cps.luhui.net%3C%2Fa%3E%E5%9B%BE%E8%89%BA%E5%9B%BE%EF%BC%9A%3Ca%20href%3D'http%3A%2F%2Fsoft.tuyitu.com%2Fsoft%2FPhotoshop.exe'target%3D'_blank'%3E%3Cfont%20color%3D'%23FF0000'%3E%E7%AB%8B%E5%8D%B3%E3%80%90%E4%B8%8B%E8%BD%BDPS%E3%80%91%3C%2Ffont%3E%3C%2Fa%3E%3C%2Fb%3E"
+announce_xywh="0,0,100P,20" announce_speed="2"
+/>
