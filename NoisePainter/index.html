@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Noise flow field painter</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <link href="" rel="stylesheet">
+
+
+
+  <link rel="icon" href="image/1.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="image/1.ico" type="image/x-icon">
+
+  <link rel="stylesheet" type="text/css" href="fonts.css">
+  <script type="text/javascript" src="js/dat.gui.min.js"></script>
+  <script type="text/javascript" src="js/p5.min.js"></script>
+  <script type="text/javascript" src="js/p5.dom.js"></script>
+  <script type="text/javascript" src="js/p5.dom.min.js"></script>
+
+
+  <input id="img-path" type="file" />
+
+  <style type="text/css">
+    *{
+      margin:0;
+      padding:0;
+    }
+
+    
+    #credits {
+      font-size: 12px;
+      position: absolute;
+      bottom: 25px;
+      right: 15px;
+      color: #303030;
+      max-width: 70%;
+      text-align: right;
+      line-height: 20px;
+    }
+    .logo {
+      font-size: 12px;
+      position: absolute;
+      bottom: 80px;
+      left: 25px;
+      color: #ffffff;
+      max-width: 70%;
+      line-height: 20px;
+      opacity: 0.7;
+    }
+    .social{
+      opacity: 0.7;
+    }
+    .iconlink{
+      bottom: 50px;
+      margin-right: 0px;
+    }
+    #img-path {
+      display: none;
+    }
+
+  </style>
+</head>
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?44f8fa2f0b239ea3093628142486b48a";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+
+<body>
+
+
+ <div id="credits"> 
+  <div class = "social" style="margin-right:10px">This tool is based on <a href ='https://www.openprocessing.org/sketch/472966' target='_blank'><strong>Jason Labbe's fantasitc project</strong></a></div>
+
+</div>
+<div class = "logo" style="margin-left:10px; margin-bottom: -40px; "><a href = "https://wangyasai.github.io/designtools.html"><img src="logo.png" style ="width: 40px"></a></div>
+
+<script type="text/javascript">
+
+  var type;
+  var options ={ 
+    drawTimes: 280,
+    strokeLength: 40,
+    strokeWeight: 25,
+    noiseScale: 0.002,
+    Image_DataURL :'',
+    'Upload Image': function(){
+        // you need to create an input element in HTML, explained later
+        var input = document.getElementById('img-path');
+        input.addEventListener('change', function() {
+          var file = input.files[0];
+          r = new FileReader();
+          r.onload = function (){
+           gui['Image_DataURL'] = r.result;
+           console.log(r.result)
+           p5LoadImage(r.result);
+           
+           type ='image'; 
+         }
+         r.readAsDataURL(file);
+
+         for (var i in gui.__controllers) {
+          gui.__controllers[i].updateDisplay();
+        }
+      });
+        input.click();       
+      },
+
+      Random: function () { 
+        options.strokeLength = random(30,60);
+        options.noiseScale= random(0.001,0.008);  
+        options.drawTimes = random(250,600);
+        options.strokeWeight = random(10,40);
+      },
+
+      Save: function(){
+        saveFrames("image", "png", 1, 1);
+      },
+    }
+
+
+//upload image
+var GuiConfig = function() {
+    this['Image Path'] = 'image/a.png';  // default image path
+    this['UploadImage'] = function() {
+    };
+  };
+
+
+
+
+  var  gui, config,LengthControl, strokeWeightControltimesControl,RandomControl,UploadImg,strokeLengthControl,noiseScaleControl,DistanceControl, pngControl;
+  window.onload = function() {
+    gui = new dat.GUI();
+
+
+  //folder1
+  var folder1 = gui.addFolder('Controls');
+
+
+  UploadImg = folder1.add(options, 'Upload Image');
+
+
+
+  strokeLengthControl = folder1.add(options, 'strokeLength',25,60);
+  strokeLengthControl.onChange(setup);
+  strokeLengthControl.listen();
+
+  strokeWeightControl = folder1.add(options, 'strokeWeight',20,40);
+  strokeWeightControl.onChange(setup);
+  strokeWeightControl.listen();
+
+
+  noiseScaleControl = folder1.add(options, 'noiseScale',0.001,0.008);
+  noiseScaleControl.onChange(setup);
+  noiseScaleControl.listen();
+
+
+  timesControl = folder1.add(options, 'drawTimes',250,600);
+  timesControl.onChange(setup);
+  timesControl.listen();
+
+  RandomControl = folder1.add(options, 'Random');
+  RandomControl.onChange(setup);
+
+
+  var SaveControl = folder1.add(options, 'Save');
+  SaveControl.onChange(save);
+
+  folder1.open();
+};
+
+//rgb to hex颜色转换
+function componentToHex(c) {
+  var hex = c.toString(16);
+  return hex.length == 1 ? "0" + hex : hex;
+}
+
+function rgbToHex(r, g, b) {
+  return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
+}
+
+
+</script>
+
+<script type="text/javascript" src="js/sketch.js"></script>
+</body>
+
+</html>
+
