@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-touch-fullscreen" content="no">
+  <title>waveFont</title>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+
+  <link rel="shortcut icon" href="image/1.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="fonts.css">
+  <script type="text/javascript" src="js/dat.gui.min.js"></script>
+
+  <script type='text/javascript' src="js/p5.min.js"></script>
+  <script type='text/javascript' src="js/p5.dom.min.js"></script>
+  <script type='text/javascript' src='js/p5.dom.js'></script>
+  <script type='text/javascript' src="js/p5.svg.js"></script>
+
+  <input id="img-path" type="file" />
+  <style type="text/css">
+  *{
+    margin:0;
+    padding:0;
+  }
+  #credits {
+    font-size: 12px;
+    position: absolute;
+    bottom: -25px;
+    right: 15px;
+    color: #ffffff;
+    max-width: 70%;
+    text-align: right;
+    line-height: 20px;
+  }
+  .logo {
+    font-size: 12px;
+    position: absolute;
+    bottom: 80px;
+    left: 25px;
+    color: #ffffff;
+    max-width: 70%;
+    line-height: 20px;
+    opacity: 0.7;
+  }
+  .social{
+    opacity: 0.7;
+  }
+  .iconlink{
+    bottom: 50px;
+    margin-right: 0px;
+  }
+  #img-path {
+    display: none;
+  }
+
+  .myContainer{
+    width:100%;
+    height:100%;
+  }
+
+  .graphic{
+    margin: 0;0;
+    padding: 0;
+  }
+</style>
+
+
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?44f8fa2f0b239ea3093628142486b48a";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+</head>
+
+
+<body>
+ <div id="credits"> 
+  <div class = "social" style="margin-right:10px">Created by @Yasai</div>
+  <div class = "social" style="margin-right:10px; margin-bottom: -40px">©️All my products may be used in both personal and commercial projects   </div>
+  <div class ="iconlink"> 
+    <span><a class="icon-weibo" href="https://weibo.com/psaiaevegas/profile?rightmod=1&wvr=6&mod=personnumber"  target="_blank"  data-icon="&#xe906;" ></a></span>
+    <span><a class="icon-zhihu" href="https://www.zhihu.com/people/wang-ya-sai/activities"  target="_blank"  data-icon="&#xe907;"></a></span>
+    <span><a class="icon-instagram" href="http://instagram.com/yasaisai"  target="_blank"  data-icon="&#xe903;"></a></span>
+    <span><a class="icon-twitter" href="https://twitter.com/yasai_wang"  target="_blank"  data-icon="&#xe905;"></a></span>
+  </div>
+</div>
+
+<div class = "logo" style="margin-left:10px; margin-bottom: -40px; "><a href = "https://wangyasai.github.io/designtools.html"><img src="logo.png" style ="width: 40px"></a></div>
+
+
+
+<script type="text/javascript">
+  var type;
+  var options ={  
+    BgColor :'#0A0A0A',
+    FillMode : 'None',
+    Fill1 : '#19b4f5',
+    Fill2 : '#a4d5f7',
+    StrokeMode : 'SolidColor',
+    Stroke1 : '#0096ff',
+    Stroke2 : '#FFFFFF',
+    StrokeWeight : 0.8,
+    WaveX: 10,
+    WaveY: 10,
+    Height: 10,
+    Noise: false,
+    NoiseColor : '#FFFFFF',
+    NoiseAlpha : 70,
+    Brightness : 50,
+    textWeight : 10,  
+    Image_DataURL :'',
+    textSize: 80,
+    Text : "WAVE FONT",
+    Offset: 0,
+    'Upload Image': function(){
+        // you need to create an input element in HTML, explained later
+        var input = document.getElementById('img-path');
+        input.addEventListener('change', function() {
+          var file = input.files[0];
+          r = new FileReader();
+          r.onload = function (){
+           gui['Image_DataURL'] = r.result;
+           p5LoadImage(r.result);
+           type='image';
+           draw();
+         }
+         r.readAsDataURL(file);
+
+         for (var i in gui.__controllers) {
+          gui.__controllers[i].updateDisplay();
+        }
+      });
+        input.click();
+      },
+
+      Smooth : true,
+      Speed: 9,
+
+      Random : function () { 
+        var BgColor1  = random(['#0C0C0C','#094F2F','#483C8C','#6B3220','#CC4462','#2ab1ff']);
+        bgcolorControl.setValue(BgColor1);
+
+        var Fill1 = random(['#F2BF2F','#DCFEFF','#0c32ac']);
+        Fill1Control.setValue(Fill1);
+
+        var FillMode = random(['None','SolidColor']);
+        FillModeControl.setValue(FillMode);
+
+        var Stroke1 = random(['#FFFFFF',]);
+        Stroke1Control.setValue(Stroke1);
+
+        var textWeight = random(0,20);
+        StrokeControl.setValue(textWeight);
+
+        var textSize = random(100,130);
+        textSizeControl.setValue(textSize);
+
+        var strokeWeight = random(0.3, 0.9);
+        StrokeWeightControl.setValue(strokeWeight);
+
+        var offset = random(0,30);
+        OffsetControl.setValue(offset);
+
+        var waveY = random(10,20);
+        WaveYControl.setValue(waveY);
+
+        var waveX = random(10,20);
+        WaveXControl.setValue(waveX);
+
+        var speed = random(8,10);
+        SpeedControl.setValue(speed);
+
+        var noise = random([false, true]);
+        noiseControl.setValue(noise);
+
+        var Smooth = random([false, true]);
+        SmoothControl.setValue(Smooth);
+
+        var textSize = random(80,120);
+        textSizeControl.setValue(textSize);
+
+        // setup();
+
+      },
+
+      Type: 'JPG',
+      Save: function(){
+        if(options.Type =='JPG'){
+          saveFrames("waveFont.jpg","jpg",1,1);
+        }else if(options.Type == 'PNG'){   
+          saveFrames("waveFont.png","png",1,1);
+        }else if(options.Type == 'SVG'){   
+          save("waveFont.svg");
+        }
+      },
+    }
+
+
+//upload icon
+var GuiConfig = function() {
+    this['Image Path'] = 'graphic.png';  // default image path
+    this['Upload Image'] = function() {
+    };
+  };
+
+
+  var text, gui, config,bgcolorControl,bg2colorControl,steepDegreeControl,RadiusControl,StrokeWeightControl,imageControl,Stroke1Control,Stroke2Control, StrokeModeControl,PngControl,SvgControl,SaveControl,steepDegreeControl2,StrokeControl,isFillControll,SmoothControl,WaveXControl,WaveYControl,AnimationControl,SaveControl,textSizeControl, svgControl,BrightnessControl,TransparentControl,SpeedControl,TypeControl,BGModeControl,noiseColorControl,noiseAlphaControl,textControl ,Fill1Control,Fill2Control,FillModeControl,HeightControl, OffsetControl;
+
+  window.onload = function() {
+    gui = new dat.GUI();
+
+  //folder1
+  var folder1 = gui.addFolder('Color');
+  var folder2 = gui.addFolder('Control');
+  var folder3 = gui.addFolder('Text');
+  var folder4 = gui.addFolder('Image');
+  var folder5 = gui.addFolder('Save');
+
+
+  bgcolorControl = folder1.addColor(options, 'BgColor');
+  bgcolorControl.onChange(function(){
+    if(options.FillMode != 'None'){
+      setup();
+      print('setup');
+    }
+  });
+
+
+  FillModeControl = folder1.add(options, 'FillMode' , ['None','SolidColor','Gradient1','Gradient2'] );
+  FillModeControl.onChange(function(){
+    if(options.FillMode == 'Gradient2'){
+      setup();
+    }
+  });
+
+  Fill1Control = folder1.addColor(options, 'Fill1');
+  Fill1Control.onChange(draw);
+  
+  Fill2Control = folder1.addColor(options, 'Fill2');
+  Fill2Control.onChange(draw);
+
+  StrokeModeControl = folder1.add(options, 'StrokeMode', ['SolidColor','Gradient'] );
+  StrokeModeControl.onChange(function(){
+    if(options.StrokeMode== 'SolidColor'){
+      type = 'SolidColor';  
+      draw();
+    }
+    else if(options.StrokeMode== 'Gradient'){
+      type = 'Gradient';  
+      draw();
+    }
+  });
+
+  Stroke1Control = folder1.addColor(options, 'Stroke1');
+  Stroke1Control.onChange(draw);
+
+  Stroke2Control = folder1.addColor(options, 'Stroke2');
+  Stroke2Control.onChange(draw);
+
+
+  OffsetControl = folder2.add(options, 'Offset',0,50);
+  OffsetControl.onChange(setup);
+
+  StrokeWeightControl = folder2.add(options, 'StrokeWeight',0,3);
+  StrokeWeightControl.onChange(draw);
+
+  WaveXControl = folder2.add(options, 'WaveX',5,30);
+  WaveXControl.onChange(draw);
+
+  WaveYControl = folder2.add(options, 'WaveY',5,30);
+  WaveYControl.onChange(setup);
+
+  HeightControl = folder2.add(options, 'Height',5,30);
+  HeightControl.onChange(draw);
+
+  SpeedControl= folder2.add(options, 'Speed',0,10);
+  SpeedControl.onChange(draw);
+
+  SmoothControl = folder2.add(options, 'Smooth');
+  SmoothControl.onChange(draw);
+
+  noiseControl = folder2.add(options, 'Noise');
+  noiseControl.onChange(setup);
+  noiseControl.onChange(draw);
+
+  noiseColorControl= folder2.addColor(options, 'NoiseColor');
+  noiseColorControl.onChange(setup);
+
+  noiseAlphaControl = folder2.add(options, 'NoiseAlpha',40,120);
+  noiseAlphaControl.onChange(setup);
+
+  RandomControl = folder2.add(options, 'Random');
+
+  //fold2 Text
+  textControl = folder3.add(options, 'Text'); 
+  textControl.onChange(function(){
+    type='text';
+    draw();
+  });
+
+  textSizeControl = folder3.add(options, 'textSize',20,300);
+  textSizeControl.onChange(draw);
+
+  StrokeControl = folder3.add(options, 'textWeight',0,40);
+  StrokeControl.onChange(draw);
+
+
+  //fold4 Image
+  var UploadImg = folder4.add(options, 'Upload Image');
+
+  BrightnessControl = folder4.add(options, 'Brightness',10,99);
+  BrightnessControl.onChange(draw);
+
+  //fold5 save
+  TypeControl =  folder5.add(options, 'Type',['JPG','PNG', 'SVG']);
+  TypeControl.onChange(function(){
+    if(options.Type == 'SVG'){
+      options.FillMode = 'None';
+      options.Noise = false;
+      setup();
+      noLoop();
+      draw();
+    }else if(options.Type == 'PNG'){   
+      options.FillMode = 'None';
+      setup();  
+      draw();
+      loop();
+    }else if(options.Type == 'JPG'){   
+      setup();  
+      draw();
+      loop();
+    }
+  });
+
+  var SaveControl = folder5.add(options, 'Save');
+//   folder1.open();
+//   folder2.open();
+  folder3.open();
+//   folder4.open();
+//   folder5.open();
+};
+
+
+function componentToHex(c) {
+  var hex = c.toString(16);
+  return hex.length == 1 ? "0" + hex : hex;
+}
+
+function rgbToHex(r, g, b) {
+  return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
+}
+</script>
+
+
+<script type="text/javascript" src="js/sketch.js"></script>
+
+
+</body>
+</html>
+
