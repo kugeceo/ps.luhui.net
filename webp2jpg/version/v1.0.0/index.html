@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>webp2jpg-online-在线图片格式转化器(无需上传)-web2jpg-Online image format converter (no upload required)-web2jpg-オンライン画像形式コンバーター（アップロード不要）-web2jpg-Convertidor de formato de imagen en línea (no requiere carga)</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> <!-- 兼容适配 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- 设备适配 -->
+    <meta name="description" content="在线图片格式转化器,可将jpeg、jpg、png、gif、webp、svg、ico、bmp文件转化为jpeg、png、webp、ico文件。无需上传文件，本地即可完成转换。Online picture format converter, can convert jpeg, jpg, png, gif, webp, svg, ico, bmp files into jpeg, png, webp, ico files. No need to upload files, conversion can be done locally。オンライン画像形式コンバータは、jpeg、jpg、png、gif、webp、svg、ico、bmpファイルをjpeg、png、webp、icoファイルに変換できます。 ファイルをアップロードする必要はありません。変換はローカルで実行できます。Convertidor de formato de imagen en línea, puede convertir archivos jpeg, jpg, png, gif, webp, svg, ico, bmp en archivos jpeg, png, webp, ico. No es necesario cargar archivos, la conversión se puede hacer localmente" /> <!-- 简介 -->
+    <meta name="author" content="renzhezhilu,https://github.com/renzhezhilu/webp2jpg-online" /> <!-- 作者 -->
+    <meta name="keywords" content="webp2jpg,png2jpg,gif2jpg,svg2jpg,ico2jpg,bmp2jpg,jpg2webp,jpg2webp,png2webp,gif2webp,svg2webp,ico2webp,bmp2webp,jpg2png,webp2png,gif2png,svg2png,ico2png,bmp2png,webp to jpg,png to jpg,gif to jpg,svg to jpg,ico to jpg,bmp to jpg,jpg to webp,jpg to webp,png to webp,gif to webp,svg to webp,ico to webp,bmp to webp,jpg to png,webp to png,gif to png,svg to png,ico to png,bmp to png,webp 转 jpg,png 转 jpg,gif 转 jpg,svg 转 jpg,ico 转 jpg,bmp 转 jpg,jpg 转 webp,jpg 转 webp,png 转 webp,gif 转 webp,svg 转 webp,ico 转 webp,bmp 转 webp,jpg 转 png,webp 转 png,gif 转 png,svg 转 png,ico 转 png,bmp 转 png,html图片转换,图片本地转换,图片格式转换,,转化至jpg、webp、png、ico,Convert to JPG,Convert to webp,Convert to png,Convert to ico">
+    <meta name="robots" content="webp2jpg,png2jpg,gif2jpg,svg2jpg,ico2jpg,bmp2jpg,jpg2webp,jpg2webp,png2webp,gif2webp,svg2webp,ico2webp,bmp2webp,jpg2png,webp2png,gif2png,svg2png,ico2png,bmp2png,webp to jpg,png to jpg,gif to jpg,svg to jpg,ico to jpg,bmp to jpg,jpg to webp,jpg to webp,png to webp,gif to webp,svg to webp,ico to webp,bmp to webp,jpg to png,webp to png,gif to png,svg to png,ico to png,bmp to png,webp 转 jpg,png 转 jpg,gif 转 jpg,svg 转 jpg,ico 转 jpg,bmp 转 jpg,jpg 转 webp,jpg 转 webp,png 转 webp,gif 转 webp,svg 转 webp,ico 转 webp,bmp 转 webp,jpg 转 png,webp 转 png,gif 转 png,svg 转 png,ico 转 png,bmp 转 png,html图片转换,图片本地转换,图片格式转换,,转化至jpg、webp、png、ico,Convert to JPG,Convert to webp,Convert to png,Convert to ico" />
+    <meta name="google" content="webp2jpg,png2jpg,gif2jpg,svg2jpg,ico2jpg,bmp2jpg,jpg2webp,jpg2webp,png2webp,gif2webp,svg2webp,ico2webp,bmp2webp,jpg2png,webp2png,gif2png,svg2png,ico2png,bmp2png,webp to jpg,png to jpg,gif to jpg,svg to jpg,ico to jpg,bmp to jpg,jpg to webp,jpg to webp,png to webp,gif to webp,svg to webp,ico to webp,bmp to webp,jpg to png,webp to png,gif to png,svg to png,ico to png,bmp to png,webp 转 jpg,png 转 jpg,gif 转 jpg,svg 转 jpg,ico 转 jpg,bmp 转 jpg,jpg 转 webp,jpg 转 webp,png 转 webp,gif 转 webp,svg 转 webp,ico 转 webp,bmp 转 webp,jpg 转 png,webp 转 png,gif 转 png,svg 转 png,ico 转 png,bmp 转 png,html图片转换,图片本地转换,图片格式转换,,转化至jpg、webp、png、ico,Convert to JPG,Convert to webp,Convert to png,Convert to ico" />
+    <meta name="googlebot" content="webp2jpg,png2jpg,gif2jpg,svg2jpg,ico2jpg,bmp2jpg,jpg2webp,jpg2webp,png2webp,gif2webp,svg2webp,ico2webp,bmp2webp,jpg2png,webp2png,gif2png,svg2png,ico2png,bmp2png,webp to jpg,png to jpg,gif to jpg,svg to jpg,ico to jpg,bmp to jpg,jpg to webp,jpg to webp,png to webp,gif to webp,svg to webp,ico to webp,bmp to webp,jpg to png,webp to png,gif to png,svg to png,ico to png,bmp to png,webp 转 jpg,png 转 jpg,gif 转 jpg,svg 转 jpg,ico 转 jpg,bmp 转 jpg,jpg 转 webp,jpg 转 webp,png 转 webp,gif 转 webp,svg 转 webp,ico 转 webp,bmp 转 webp,jpg 转 png,webp 转 png,gif 转 png,svg 转 png,ico 转 png,bmp 转 png,html图片转换,图片本地转换,图片格式转换,,转化至jpg、webp、png、ico,Convert to JPG,Convert to webp,Convert to png,Convert to ico" />
+    <meta name="baidu" content="webp2jpg,png2jpg,gif2jpg,svg2jpg,ico2jpg,bmp2jpg,jpg2webp,jpg2webp,png2webp,gif2webp,svg2webp,ico2webp,bmp2webp,jpg2png,webp2png,gif2png,svg2png,ico2png,bmp2png,webp to jpg,png to jpg,gif to jpg,svg to jpg,ico to jpg,bmp to jpg,jpg to webp,jpg to webp,png to webp,gif to webp,svg to webp,ico to webp,bmp to webp,jpg to png,webp to png,gif to png,svg to png,ico to png,bmp to png,webp 转 jpg,png 转 jpg,gif 转 jpg,svg 转 jpg,ico 转 jpg,bmp 转 jpg,jpg 转 webp,jpg 转 webp,png 转 webp,gif 转 webp,svg 转 webp,ico 转 webp,bmp 转 webp,jpg 转 png,webp 转 png,gif 转 png,svg 转 png,ico 转 png,bmp 转 png,html图片转换,图片本地转换,图片格式转换,,转化至jpg、webp、png、ico,Convert to JPG,Convert to webp,Convert to png,Convert to ico" />
+    <meta name="verify" content="webp2jpg,png2jpg,gif2jpg,svg2jpg,ico2jpg,bmp2jpg,jpg2webp,jpg2webp,png2webp,gif2webp,svg2webp,ico2webp,bmp2webp,jpg2png,webp2png,gif2png,svg2png,ico2png,bmp2png,webp to jpg,png to jpg,gif to jpg,svg to jpg,ico to jpg,bmp to jpg,jpg to webp,jpg to webp,png to webp,gif to webp,svg to webp,ico to webp,bmp to webp,jpg to png,webp to png,gif to png,svg to png,ico to png,bmp to png,webp 转 jpg,png 转 jpg,gif 转 jpg,svg 转 jpg,ico 转 jpg,bmp 转 jpg,jpg 转 webp,jpg 转 webp,png 转 webp,gif 转 webp,svg 转 webp,ico 转 webp,bmp 转 webp,jpg 转 png,webp 转 png,gif 转 png,svg 转 png,ico 转 png,bmp 转 png,html图片转换,图片本地转换,图片格式转换,,转化至jpg、webp、png、ico,Convert to JPG,Convert to webp,Convert to png,Convert to ico" />
+    <meta name="apple-mobile-web-app-capable" content="yes" /> <!-- webapp全屏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" /> <!-- apple状态栏颜 色-->
+    <meta name="format-detection" content="telephone=no, email=no" /> <!-- 禁止电话邮件自动识别 -->
+    <meta name="HandheldFriendly" content="true" /> <!-- 移动设备优化，针对不支持viewpoint设备 -->
+    <meta name="MobileOptimized" content="320" /> <!-- 微软旧浏览器适配 -->
+
+    <!--  -->
+    <meta property="og:site_name" content="webp2jpg-online-Picture converter" />
+    <meta property="og:title" content='webp2jpg-online-在线图片格式转化器(无需上传)-web2jpg-Online image format converter (no upload required)' />
+    <meta property="og:description" content="在线图片格式转化器,可将jpeg、jpg、png、gif、webp、svg、ico、bmp文件转化为jpeg、png、webp、ico文件。无需上传文件，本地即可完成转换。Online picture format converter, can convert jpeg, jpg, png, gif, webp, svg, ico, bmp files into jpeg, png, webp, ico files. No need to upload files, conversion can be done locally。オンライン画像形式コンバータは、jpeg、jpg、png、gif、webp、svg、ico、bmpファイルをjpeg、png、webp、icoファイルに変換できます。 ファイルをアップロードする必要はありません。変換はローカルで実行できます。Convertidor de formato de imagen en línea, puede convertir archivos jpeg, jpg, png, gif, webp, svg, ico, bmp en archivos jpeg, png, webp, ico. No es necesario cargar archivos, la conversión se puede hacer localmente" />
+    <meta property="og:image" content="https://renzhezhilu.github.io/webp2jpg-online/images/og_image.png">
+    <meta property="og:url" content="https://renzhezhilu.github.io/webp2jpg-online/">
+    <meta property="og:type" content="article" />
+
+    <link rel="apple-touch-icon" href="./images/apple-touch-iphone.png" />
+
+    <!--  -->
+    <link rel="shortcut icon" href="./images/favicon.ico" />
+    <link rel="stylesheet" href="./css/index.css">
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?3b0931bcaac4aba82e0b86cce3b5033e";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+</head>
+
+<body id="body" class="">
+    <!--  -->
+    <input type="file" name="files" id="files" accept=".jpeg,.jpg,.png,.gif,.webp,.svg,.ico,.bmp" multiple />
+
+    <!--  -->
+    <output id="list"></output>
+    <div class="p2">
+        <div style="font-size:16px; line-height: 20px; padding: 10px 0;">
+            <p style="font-size:22px; padding:10px 0;">
+                备用地址：
+                <a href="https://renzhezhilu.gitee.io/webp2jpg-online" target="_blank">https://renzhezhilu.gitee.io/webp2jpg-online</a>
+            </p>
+            <p>
+                <i>q：为什么有时打不开？</i>
+            </p>
+            <p>
+                a：<a href="https://www.zhihu.com/question/382718053" target="_blank">知乎「如何看待2020 年 3 月 26 日 GitHub 疑似遭受中间人攻击？」</a>
+            </p>
+
+        </div>
+        <h1>webp2jpg-online几秒钟内将WEBP转换为JPG文件的最佳方法，无需上传文件。</h1>
+        <h2>Select jpeg, jpg, png, gif, webp, svg, ico, bmp files</h2>
+        <label for="select_type">Output format/输出格式：</label>
+        <select name="select_type" id="select_type">
+            <option value="jpeg">jpeg</option>
+            <option value="webp">webp</option>
+            <option value="png">png</option>
+            <option value="ico">ico</option>
+        </select>
+        <label for="select_size">Size/尺寸：</label>
+        <select name="select_size" id="select_size">
+            <option value="1">x1</option>
+            <option value="2">x2</option>
+            <option value="3">x3</option>
+            <option value="4">x4</option>
+            <option value="5">x5</option>
+            <option value="0.9">0.9</option>
+            <option value="0.8">0.8</option>
+            <option value="0.7">0.7</option>
+            <option value="0.6">0.6</option>
+            <option value="0.5">0.5</option>
+            <option value="0.4">0.4</option>
+            <option value="0.3">0.3</option>
+            <option value="0.2">0.2</option>
+            <option value="0.1">0.1</option>
+        </select>
+        <label for="select_quality">Quality/画质：</label>
+        <select name="select_quality" id="select_quality">
+            <option value="1">1</option>
+            <option value="0.9">0.9</option>
+            <option value="0.8">0.8</option>
+            <option value="0.7">0.7</option>
+            <option value="0.6">0.6</option>
+            <option value="0.5">0.5</option>
+            <option value="0.4">0.4</option>
+            <option value="0.3">0.3</option>
+            <option value="0.2">0.2</option>
+            <option value="0.1">0.1</option>
+        </select>
+        <label for="select_isZip">not Zip/不打包：</label>
+        <input type="checkbox" name="select_isZip" value="1" id="select_isZip">
+
+    </div>
+
+    <label class="drag" for="files">
+        <div id="loading">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="30px" viewBox="0 0 24 30" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                <rect x="0" y="9.76753" width="4" height="10.4649" fill="#333" opacity="0.2">
+                    <animate attributeName="opacity" attributeType="XML" values="0.2; 1; .2" begin="0s" dur="0.6s" repeatCount="indefinite"></animate>
+                    <animate attributeName="height" attributeType="XML" values="10; 20; 10" begin="0s" dur="0.6s" repeatCount="indefinite"></animate>
+                    <animate attributeName="y" attributeType="XML" values="10; 5; 10" begin="0s" dur="0.6s" repeatCount="indefinite"></animate>
+                </rect>
+                <rect x="8" y="7.26753" width="4" height="15.4649" fill="#333" opacity="0.2">
+                    <animate attributeName="opacity" attributeType="XML" values="0.2; 1; .2" begin="0.15s" dur="0.6s" repeatCount="indefinite"></animate>
+                    <animate attributeName="height" attributeType="XML" values="10; 20; 10" begin="0.15s" dur="0.6s" repeatCount="indefinite"></animate>
+                    <animate attributeName="y" attributeType="XML" values="10; 5; 10" begin="0.15s" dur="0.6s" repeatCount="indefinite"></animate>
+                </rect>
+                <rect x="16" y="5.23247" width="4" height="19.5351" fill="#333" opacity="0.2">
+                    <animate attributeName="opacity" attributeType="XML" values="0.2; 1; .2" begin="0.3s" dur="0.6s" repeatCount="indefinite"></animate>
+                    <animate attributeName="height" attributeType="XML" values="10; 20; 10" begin="0.3s" dur="0.6s" repeatCount="indefinite"></animate>
+                    <animate attributeName="y" attributeType="XML" values="10; 5; 10" begin="0.3s" dur="0.6s" repeatCount="indefinite"></animate>
+                </rect>
+            </svg>
+        </div>
+
+        <div class="con">
+            <div class="img_box" id="img_box">
+                <!-- <div class="img_one">
+                    <p class="type">gif</p>
+                    <p class="size">200x100</p>
+                    <img src="./images/test01.jpg" alt="">
+                </div> -->
+            </div>
+            <p class="p1">+</p>
+        </div>
+        <div>
+            点击选择/拖放文件（可批量）
+            Click on select/drag file (batch)
+        </div>
+    </label>
+    <!--  -->
+    <!-- <div class="download_but">
+        下载 159000303204.zip（10张）
+    </div> -->
+    <!--  -->
+    <div class="ready">
+        <p>一切就绪！Everything's ready!</p>
+    </div>
+
+    <div class="pyro" id="pyro">
+        <!-- <div class="before"></div>
+        <div class="after"></div> -->
+    </div>
+
+    <a href="https://github.com/renzhezhilu/webp2jpg-online" target="_blank">
+        <img src="./images/viewInGithub.png" class="viewInGithub" />
+    </a>
+
+    <div class="jg" id="jg"></div>
+
+    <!--  -->
+    <canvas id="can"></canvas>
+    <!-- jszip打包📦用 -->
+    <script src="./js/jszip.min.js"></script>
+    <script src="./js/index.js"></script>
+
+
+</body>
+
+</html>
