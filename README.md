@@ -10,6 +10,8 @@ http://ps.luhui.net
 自定义域名演示地址
 http://photoshop.luhui.net 
 
+http://ps.guanfu.org/
+
 
 代码托管运营在
 [![Netlify Status](https://api.netlify.com/api/v1/badges/d9521819-5439-408e-9bd5-45fbdec2a40e/deploy-status)](https://app.netlify.com/sites/luhuiphotoshop/deploys)
