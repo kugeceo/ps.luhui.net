@@ -14,11 +14,10 @@ http://ps.guanfu.org/
 
 
 代码托管运营在
-[![Netlify Status](https://api.netlify.com/api/v1/badges/d9521819-5439-408e-9bd5-45fbdec2a40e/deploy-status)](https://app.netlify.com/sites/luhuiphotoshop/deploys)
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/eaa3f88c-7a1f-47cd-8687-3a71a50bf495/deploy-status)](https://app.netlify.com/sites/luhuiphotoshop/deploys)
 
 演示地址
-http://luhuiphotoshop.netlify.com
+http://luhuiphotoshop.netlify.app
 
 
 鲁虺在线PS图像处理工具
